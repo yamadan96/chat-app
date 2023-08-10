@@ -50,11 +50,12 @@ onValue(ref(db, "chat"), function (snapshot) {
 
   chat.innerHTML = "";
   Object.keys(chatList).forEach((key) => {
-    chat.innerHTML +=
+    chat.innerHTML =
       '<div class="text-secindary small">' +
       chatList[key].date +
       "</div><div>" +
       chatList[key].text +
       "</div><hr>";
+    +chat.innerHTML;
   });
 });
