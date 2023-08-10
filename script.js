@@ -55,7 +55,7 @@ onValue(ref(db, "chat"), function (snapshot) {
       chatList[key].date +
       "</div><div>" +
       chatList[key].text +
-      "</div><hr>";
-    +chat.innerHTML;
+      "</div><hr>" +
+      chat.innerHTML;
   });
 });
